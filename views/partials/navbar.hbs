@@ -1,0 +1,49 @@
+<header class="header">
+    <div class="wrapper">
+        <a href="/"><div class="logo"></div></a>
+        {{!-- <div class="name-block">
+            <div class="title">ATS inc.</div>
+            <div class="name">Advanced Tech Systems</div>
+        </div> --}}
+        <div class="burg-wrap">
+            <div class="burg-menu"></div>
+        </div>
+        <div class="wrap-menu">
+            <nav class="nav">
+                <ul class="menu">
+                    {{#if isHome}}
+                        <li class="active"><a href="/">Об организации</a></li>
+                    {{else}}
+                        <li><a href="/">Об организации</a></li>
+                    {{/if}}
+
+                    {{#if isSolutions}}
+                        <li class="active"><a href="/solutions">Решения</a></li>
+                    {{else}}
+                        <li><a href="/solutions">Решения</a></li>
+                    {{/if}}
+
+                    {{#if isServices}}
+                        <li class="active"><a href="/services">Услуги</a></li>
+                    {{else}}
+                        <li><a href="/services">Услуги</a></li>
+                    {{/if}}
+                    
+                    {{!-- {{#if isDev}}
+                        <li class="active"><a href="/dev">Разработка ПО</a></li>
+                    {{else}}
+                        <li><a href="/dev">Разработка ПО</a></li>
+                    {{/if}} --}}
+
+                    {{#if isContacts}}
+                        <li class="active"><a href="/contacts">Контакты</a></li>
+                    {{else}}
+                        <li><a href="/contacts">Контакты</a></li>
+                    {{/if}}
+                        
+                </ul>
+            </nav>
+        </div>
+        <script src="/public/nav.js"></script>
+    </div>
+</header>
