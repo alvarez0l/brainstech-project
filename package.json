@@ -1,0 +1,25 @@
+{
+  "name": "bt_project",
+  "version": "0.0.1",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvarez0l/brainstech-project.git"
+  },
+  "author": "A0L",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alvarez0l/brainstech-project/issues"
+  },
+  "homepage": "https://github.com/alvarez0l/brainstech-project#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1",
+    "http": "^0.0.1-security",
+    "nodemon": "^3.1.7"
+  }
+}
