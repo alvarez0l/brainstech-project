@@ -1,10 +1,18 @@
 <header class="header">
     <div class="wrapper">
         <a href="/"><div class="logo"></div></a>
-        {{!-- <div class="name-block">
-            <div class="title">ATS inc.</div>
-            <div class="name">Advanced Tech Systems</div>
-        </div> --}}
+        <div class="catalog-btn-wrap">
+            <div class="catalog-btn"></div>
+        </div>
+        <div class="catalog-wrap">
+            <nav class="catalog-nav">
+                <ul class="catalog-menu">
+                    <li><div class="catalog-m-item">Test</div></li>
+                    <li><div class="catalog-m-item">Test</div></li>
+                    <li><div class="catalog-m-item">Test</div></li>
+                </ul>
+            </nav>
+        </div>
         <div class="burg-wrap">
             <div class="burg-menu"></div>
         </div>
@@ -12,38 +20,39 @@
             <nav class="nav">
                 <ul class="menu">
                     {{#if isHome}}
-                        <li class="active"><a href="/">Об организации</a></li>
+                        <li class="active"><a href="/">Главная</a></li>
                     {{else}}
-                        <li><a href="/">Об организации</a></li>
+                        <li><a href="/">Главная</a></li>
                     {{/if}}
 
-                    {{#if isSolutions}}
-                        <li class="active"><a href="/solutions">Решения</a></li>
+                    {{#if isDelpay}}
+                        <li class="active"><a href="/delpay">Доставка и оплата</a></li>
                     {{else}}
-                        <li><a href="/solutions">Решения</a></li>
+                        <li><a href="/delpay">Доставка и оплата</a></li>
                     {{/if}}
 
-                    {{#if isServices}}
-                        <li class="active"><a href="/services">Услуги</a></li>
+                    {{#if isProdreturn}}
+                        <li class="active"><a href="/prodreturn">Возврат товара</a></li>
                     {{else}}
-                        <li><a href="/services">Услуги</a></li>
+                        <li><a href="/prodreturn">Возврат товара</a></li>
                     {{/if}}
-                    
-                    {{!-- {{#if isDev}}
-                        <li class="active"><a href="/dev">Разработка ПО</a></li>
-                    {{else}}
-                        <li><a href="/dev">Разработка ПО</a></li>
-                    {{/if}} --}}
 
                     {{#if isContacts}}
                         <li class="active"><a href="/contacts">Контакты</a></li>
                     {{else}}
                         <li><a href="/contacts">Контакты</a></li>
                     {{/if}}
-                        
+
+                    {{#if isHelp}}
+                        <li class="active"><a href="/help">Помощь</a></li>
+                    {{else}}
+                        <li><a href="/help">Помощь</a></li>
+                    {{/if}}
+
                 </ul>
             </nav>
         </div>
         <script src="/public/nav.js"></script>
+        <script src="/public/cat-nav.js"></script>
     </div>
 </header>

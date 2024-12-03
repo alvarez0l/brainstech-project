@@ -135,6 +135,47 @@ td {
       background-color: #068374;
   }
 
+  .catalog-btn-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 10px;
+  }
+  .catalog-wrap .catalog-nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background-color: #2523ac;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 1% 0);
+    transition: 0.5s;
+    border: 2px solid rgb(84, 94, 240);
+  }
+
+  .catalog-wrap .catalog-nav .catalog-menu {
+    display: block;
+  }
+
+  .catalog-wrap .catalog-nav .catalog-menu li {
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(110, 101, 231);
+  }
+
+  .catalog-btn {
+    width: 40px;
+    height: 40px;
+    background-image: url('burger-menu.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .catalog-wrap .catalog-nav.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
 
 .content {
   grid-area: content;
@@ -177,7 +218,9 @@ td {
     background-repeat: no-repeat;
 }
     #banner-back-i {
-        background-image: url(ban.jpg);
+        background-image: url(pcs-comp.png);
+        background-position: center;
+        background-size: 60%;
     }
 
     #banner-back-so {
