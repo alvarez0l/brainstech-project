@@ -2,9 +2,9 @@ const {Router} = require('express');
 const router = Router();
 
 router.get('/', (req, res) => {
-    res.render('delpay', {
-        title: 'BT - Доставка',
-        isDelpay: true
+    res.render('contacts', {
+        title: 'BT - Контакты',
+        isContacts: true
     })
 });
 

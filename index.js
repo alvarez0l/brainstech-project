@@ -15,6 +15,9 @@ const MongoStore = require('connect-mongodb-session')(session);
 
 const homeRoutes = require('./routes/home');
 const delpayRoutes = require('./routes/delpay');
+const prodreturnRoutes = require('./routes/prodreturn');
+const contactsRoutes = require('./routes/contacts');
+const helpRoutes = require('./routes/help');
 
 // const varMiddleware = require('./middleware/variables');
 
@@ -55,6 +58,9 @@ app.use(express.urlencoded({extended: true}));
 
 app.use('/', homeRoutes);
 app.use('/delpay', delpayRoutes);
+app.use('/prodreturn', prodreturnRoutes);
+app.use('/contacts', contactsRoutes);
+app.use('/help', helpRoutes);
 
 
 app.listen(4000, (err) => {  //Запуск сервера (port)
