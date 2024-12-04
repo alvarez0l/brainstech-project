@@ -130,7 +130,6 @@ td {
       display: flex;
       align-items: center;
       list-style: none;
-      padding: 30px;
   }
 
   .menu a, .footer-menu a {
@@ -149,8 +148,9 @@ td {
     background-image: url("cart.png");
     background-size: 90%;
     background-repeat: no-repeat;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
 }
 
   .acc-img {
@@ -171,14 +171,15 @@ td {
   }
   .catalog-wrap .catalog-nav {
     position: absolute;
-    top: 70px;
+    top: 130px;
     left: 0;
-    width: 100%;
-    height: 500px;
-    background-color: #d8d8d8;
+    width: 45%;
+    height: auto;
+    background-color: #cdcbd1;
     clip-path: polygon(0 0, 100% 0, 100% 0, 1% 0);
     transition: 0.5s;
     border: 2px solid rgb(0, 0, 0);
+    z-index: 2;
   }
 
   .catalog-wrap .catalog-nav .catalog-menu {
@@ -188,6 +189,7 @@ td {
   .catalog-wrap .catalog-nav .catalog-menu li {
     padding: 20px 0;
     border-bottom: 1px solid rgb(207, 207, 207);
+    list-style: none;
   }
 
   .catalog-btn {
@@ -200,7 +202,64 @@ td {
 
   .catalog-wrap .catalog-nav.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 2;
   }
+
+.catalog-m-item {
+  background-color: #cdcbd1;
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.catalog-m-item2 {
+  display: flex;
+  flex-direction: column;
+}
+
+ /* Dropdown Button */
+ .dropbtn {
+  color: rgb(0, 0, 0);
+  background-color: #cdcbd1;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.catalog-drop {
+  position: relative;
+  display: flex;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #e7e5eb;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 999;
+  left: 200px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropbtn:hover, .catalog-drop:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.catalog-drop:hover .dropbtn {background-color: #3e8e41;} 
 
 
 .content {

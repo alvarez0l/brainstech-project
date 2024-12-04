@@ -19,6 +19,9 @@ const prodreturnRoutes = require('./routes/prodreturn');
 const contactsRoutes = require('./routes/contacts');
 const helpRoutes = require('./routes/help');
 
+const cartRoutes = require('./routes/cart');
+const accountRoutes = require('./routes/account');
+
 // const varMiddleware = require('./middleware/variables');
 
 // const MONGODB_URI = 'mongodb+srv://admin:oGjp24HfB8Do0Pry@cluster109.ciqquwb.mongodb.net/blog?retryWrites=true&w=majority&appName=Cluster109';
@@ -61,6 +64,9 @@ app.use('/delpay', delpayRoutes);
 app.use('/prodreturn', prodreturnRoutes);
 app.use('/contacts', contactsRoutes);
 app.use('/help', helpRoutes);
+
+app.use('/cart', cartRoutes);
+app.use('/account', accountRoutes);
 
 
 app.listen(4000, (err) => {  //Запуск сервера (port)
